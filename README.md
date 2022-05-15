@@ -1,5 +1,5 @@
 .
-├── ansible/
+├── ansible/                                                                                                                                                              
 │   ├── ansible.cfg → ansible configuration file
 │   └── hosts → ansible inventory file
 ├── ansible-playbook/
