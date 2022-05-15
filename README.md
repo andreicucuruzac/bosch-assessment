@@ -13,4 +13,5 @@
 │   └── yarn.lock                                                                                                                                                         
 └── README.md                                                                                                                                                                              
                                                                                                                                                                        
-APP IS RUNNING AT http://13.73.144.172:3000/
+APP IS RUNNING HERE http://13.73.144.172:3000/
+VIDEO DEMO HERE https://www.youtube.com/watch?v=-_kraQsu_do
