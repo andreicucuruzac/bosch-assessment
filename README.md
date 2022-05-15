@@ -11,5 +11,5 @@
 │   ├── docker-compose.yml → docker-compose file to be run on the target VM                                                                                               
 │   ├── package.json                                                                                                                                                     
 │   └── yarn.lock                                                                                                                                                         
-└── READMD                                                                                                                                                               
+└── README.md                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                          
