@@ -1,0 +1,49 @@
+---
+- hosts: azure
+  become: yes
+  tasks:
+    - name: install prereq
+      apt:
+        update_cache: yes
+        pkg: 
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+    #
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+    #
+    - name: add docker repo
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+    #
+    - name: install docker 
+      apt:
+        update_cache: yes
+        pkg: 
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-compose-plugin
+  #
+    - name: Creates directory
+      file:
+        path: /usable
+        state: directory
+  #
+    - name: copy app directory
+      copy: 
+        src: /docker-compose-files/app
+        dest: /usable
+  #  
+    - name: copy docker compose file
+      copy: 
+        src: /docker-compose-files/docker-compose.yml
+        dest: /usable/app
+  #
+    - name: run docker compose file
+      shell:
+        chdir: /usable/app
+        cmd: docker compose up -d

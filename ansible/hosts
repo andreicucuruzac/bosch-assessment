@@ -1,0 +1,17 @@
+[rpi]
+192.168.0.13
+[rpi:vars]
+ansible_user=root
+ansible_password=aqswdefr123
+
+[azure]
+13.73.144.172
+[azure:vars]
+ansible_user=bosch_test
+ansible_password=Qwertyuiop123
+
+[vm]
+192.168.0.221
+[vm:vars]
+ansible_user=ubuntu2
+ansible_password=aqswdefr123@@
