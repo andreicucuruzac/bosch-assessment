@@ -11,5 +11,6 @@
 │   ├── docker-compose.yml → docker-compose file to be run on the target VM                                                                                               
 │   ├── package.json                                                                                                                                                     
 │   └── yarn.lock                                                                                                                                                         
-└── README.md                                                                                                                                                                                                                                                                                                                 
+└── README.md                                                                                                                                                                              
+                                                                                                                                                                       
 APP IS RUNNING AT http://13.73.144.172:3000/
