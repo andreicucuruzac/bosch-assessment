@@ -1,7 +1,7 @@
-.
-├── ansible/                                                                                                                                                              
-│   ├── ansible.cfg → ansible configuration file
-│   └── hosts → ansible inventory file
+.                                                                                                                                                                         
+├── ansible/                                                                                                                                                            
+│   ├── ansible.cfg → ansible configuration file                                                                                                                         
+│   └── hosts → ansible inventory file                                                                                                                                  
 ├── ansible-playbook/
 │   └── install_docker_app.yaml → required ansible playbook - the file to be run from the ansible server
 ├── app/
